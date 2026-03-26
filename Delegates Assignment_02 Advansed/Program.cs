@@ -5,17 +5,17 @@
         static void Main(string[] args)
         {
 
-//            List<Product> catalog = new()
-//{
-//    new Product { Id=1, Name="Laptop", Category="Electronics", Price=1200, Stock=10 },
-//    new Product { Id=2,Name="Phone", Category="Electronics", Price=800, Stock=25 },
-//    new Product { Id=3, Name="T-Shirt", Category="Clothing", Price=30, Stock=100 },
-//    new Product { Id=4, Name="Jeans", Category="Clothing", Price=60, Stock=50 },
-//    new Product { Id=5, Name="Chocolate", Category="Food", Price=5, Stock=200 },
-//    new Product { Id=6, Name="Coffee Beans", Category="Food", Price=15, Stock=80 },
-//    new Product { Id=7, Name="C# Book", Category="Books", Price=45, Stock=30 },
-//    new Product { Id=8, Name="Novel", Category="Books", Price=20, Stock=60 },
-//    new Product { Id=9,Name="Headphones", Category="Electronics", Price=150, Stock=60 }};
+            List<Product> catalog = new()
+{
+    new Product { Id=1, Name="Laptop", Category="Electronics", Price=1200, Stock=10 },
+    new Product { Id=2,Name="Phone", Category="Electronics", Price=800, Stock=25 },
+    new Product { Id=3, Name="T-Shirt", Category="Clothing", Price=30, Stock=100 },
+    new Product { Id=4, Name="Jeans", Category="Clothing", Price=60, Stock=50 },
+    new Product { Id=5, Name="Chocolate", Category="Food", Price=5, Stock=200 },
+    new Product { Id=6, Name="Coffee Beans", Category="Food", Price=15, Stock=80 },
+    new Product { Id=7, Name="C# Book", Category="Books", Price=45, Stock=30 },
+    new Product { Id=8, Name="Novel", Category="Books", Price=20, Stock=60 },
+    new Product { Id=9,Name="Headphones", Category="Electronics", Price=150, Stock=60 }};
             #region task_01
 
             // Console.WriteLine("============================Electronics===============================");
@@ -57,7 +57,7 @@
             #region task_03
             #region 3.1  Print Reports 
 
-           
+
             //Console.WriteLine("==========================Short Report==========================");
             //Action<Product> ShortReport = product => Console.WriteLine($"{product.Name} - {product.Price}$");
             //Print.PrintReport(catalog, ShortReport);
@@ -67,7 +67,35 @@
             //Print.PrintReport(catalog, DetailsReport);
             #endregion
 
+            #region 3.2. Transform Products 
+            //Console.WriteLine("=======================summary List========================");
+            //Func<Product,string> sumList = product => $"{product.Name} ({product.Price})";
+            //List<string> summaryList = Transform.transform(catalog, sumList);
+            //foreach (var item in summaryList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine("=======================Label List========================");
 
+            //Func<Product, string> label = delegate (Product product) 
+            //{
+            //    string exp;
+            //    if (product.Price > 100)
+            //    {
+            //        exp = "Expensive";
+            //    }
+            //    else
+            //    {
+            //        exp = "Affordable";
+            //    }
+            //    return $"{product.Name} : {exp}";
+            //};
+            //List<string> LabelList = Transform.transform(catalog, label);
+            //foreach (var item in LabelList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
             #endregion
 
 
