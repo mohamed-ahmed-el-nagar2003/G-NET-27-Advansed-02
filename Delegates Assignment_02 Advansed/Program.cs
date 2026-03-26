@@ -16,40 +16,59 @@
 //    new Product { Id=7, Name="C# Book", Category="Books", Price=45, Stock=30 },
 //    new Product { Id=8, Name="Novel", Category="Books", Price=20, Stock=60 },
 //    new Product { Id=9,Name="Headphones", Category="Electronics", Price=150, Stock=60 }};
-           // Console.WriteLine("============================Electronics===============================");
-           // Func<Product,bool> conditionOfElectronics = product => product.Category == "Electronics" ;
-           //List<Product> ElectronicProducts = SearchProducts.Search(catalog, conditionOfElectronics);
-           // foreach (Product product in ElectronicProducts)
-           // {
-           //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
-           // }
+            #region task_01
 
-           // Console.WriteLine("============================cheaper than 50$===============================");
+            // Console.WriteLine("============================Electronics===============================");
+            // Func<Product,bool> conditionOfElectronics = product => product.Category == "Electronics" ;
+            //List<Product> ElectronicProducts = SearchProducts.Search(catalog, conditionOfElectronics);
+            // foreach (Product product in ElectronicProducts)
+            // {
+            //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
+            // }
 
-           // Func<Product, bool> cheaperthan = product => product.Price < 50;
-           // List<Product> Cheaper = SearchProducts.Search(catalog, cheaperthan);
-           // foreach (Product product in Cheaper)
-           // {
-           //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
-           // }
+            // Console.WriteLine("============================cheaper than 50$===============================");
 
-           // Console.WriteLine("============================in stock (Stock > 0) ===============================");
+            // Func<Product, bool> cheaperthan = product => product.Price < 50;
+            // List<Product> Cheaper = SearchProducts.Search(catalog, cheaperthan);
+            // foreach (Product product in Cheaper)
+            // {
+            //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
+            // }
+
+            // Console.WriteLine("============================in stock (Stock > 0) ===============================");
 
 
-           //      Func<Product, bool> inStock = product => product.Stock > 0;
-           // List<Product> InStock = SearchProducts.Search(catalog, inStock);
-           // foreach (Product product in InStock)
-           // {
-           //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
-           // }
+            //      Func<Product, bool> inStock = product => product.Stock > 0;
+            // List<Product> InStock = SearchProducts.Search(catalog, inStock);
+            // foreach (Product product in InStock)
+            // {
+            //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
+            // }
 
-           // Console.WriteLine("============================ Clothing products under $100 ===============================");
-           //        Func<Product, bool> Clothing = product => product.Category == "Clothing";
-           // List<Product> Clothes = SearchProducts.Search(catalog, Clothing);
-           // foreach (Product product in Clothes)
-           // {
-           //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
-           // }
+            // Console.WriteLine("============================ Clothing products under $100 ===============================");
+            //        Func<Product, bool> Clothing = product => product.Category == "Clothing";
+            // List<Product> Clothes = SearchProducts.Search(catalog, Clothing);
+            // foreach (Product product in Clothes)
+            // {
+            //     Console.WriteLine($"{product.Name}-{product.Price}({product.Stock})");
+            // }
+            #endregion
+
+            #region task_03
+            #region 3.1  Print Reports 
+
+           
+            //Console.WriteLine("==========================Short Report==========================");
+            //Action<Product> ShortReport = product => Console.WriteLine($"{product.Name} - {product.Price}$");
+            //Print.PrintReport(catalog, ShortReport);
+
+            //Console.WriteLine("==========================Details Report==========================");
+            //Action<Product> DetailsReport = product => Console.WriteLine($"[{product.Category}] {product.Name} | Price: {product.Price}$ | Stock :{product.Stock}");
+            //Print.PrintReport(catalog, DetailsReport);
+            #endregion
+
+
+            #endregion
 
 
         }
