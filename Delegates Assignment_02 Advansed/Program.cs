@@ -98,13 +98,13 @@
             #endregion
 
             #region 3.3. Filter Products 
-            //Console.WriteLine("======================Check Stock=====================");
-            //Predicate<Product> filter = Product => Product.Stock < 20 ? true : false;
-            //List<Product> FilterStock = Filter.FilterStock(catalog, filter);
-            //foreach (var item in FilterStock)
-            //{
-            //    Console.WriteLine($"[Low Stock]{item.Name} : only {item.Stock} Left !");
-            //}
+            Console.WriteLine("======================Check Stock=====================");
+            Predicate<Product> filter = Product => Product.Stock < 20 ? true : false;
+            List<Product> FilterStock = Filter.FilterStock(catalog, filter);
+            foreach (var item in FilterStock)
+            {
+                Console.WriteLine($"[Low Stock]{item.Name} : only {item.Stock} Left !");
+            }
             #endregion
 
             #endregion
